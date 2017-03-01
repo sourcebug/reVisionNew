@@ -14,7 +14,10 @@
           .nav {
               padding-top:10px;
           }
-          
+
+          .navbar {
+              margin-bottom: 0;
+          }
 
           .nav.navbar-nav.navbar-right li a {
                 color: blue;
@@ -34,7 +37,7 @@
           }
           
           #contact-info {
-              padding-top: 100px;
+              padding-top: 10px;
           }
           .btn {
               padding-top: 6px;
@@ -45,6 +48,31 @@
           .navbar-default .navbar-toggle .icon-bar {
               background-color:#d10d40;
           }
+          
+          .jumbotron {
+              .container;
+              padding-top: 0;
+              padding-bottom: 0;
+              margin-bottom: 0;
+              border-bottom: 0;
+              text-align: center;
+              height: 350px;
+          }
+          #photo {
+                postion:absolute;
+                width: 100%;
+                height: 350px;
+
+              background: url('RealBaggage.png');
+              opacity: 0.4;
+          }
+          
+            .bigletters {
+              position:relative;
+              font-size: 3em;
+              color: #d10d40;
+              transform: translate(0, -200px); 
+            }          
           
           .btn-sized {
               min-width: 90px;
@@ -81,9 +109,14 @@
             </div>
         </div>
     </div>
-    <div class="container common-div">
-        <h2 >Simulated Baggage Handler</h2>
+    
+    <div class="jumbotron">
+        <div id="photo"></div>
+        <div class="bigletters common-div">Simulated Baggage Handler<br><span style="font-size:0.5em"><button>Under Construction</button></span>
+        </div>
+        
     </div>
+
     
     <div class="container  common-div">
       <h3 id="contact-info"> CONTACT </h2>
