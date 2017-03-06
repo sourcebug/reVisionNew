@@ -49,30 +49,48 @@
               background-color:#d10d40;
           }
           
+          .company {
+              color: #d10d40;
+              float:left;
+          }
           .jumbotron {
               .container;
-              padding-top: 0;
-              padding-bottom: 0;
-              margin-bottom: 0;
-              border-bottom: 0;
+
+              
+              padding-top: 0px;
+              padding-bottom: 0px;
+              margin-bottom: 0px;
               text-align: center;
-              height: 350px;
+              border-top: 5px solid #d10d40;
+              border-bottom: 5px solid #d10d40;              
+              height: 370px;
           }
           #photo {
-                postion:absolute;
+
+
                 width: 100%;
-                height: 350px;
+                height: 360px;
+                
 
               background: url('RealBaggage.png');
-              opacity: 0.4;
+              background-repeat: no-repeat;
+              background-size: cover;
+              opacity: 0.5;
           }
           
             .bigletters {
               position:relative;
               font-size: 3em;
               color: #d10d40;
-              transform: translate(0, -200px); 
-            }          
+              transform: translate(0, -300px); 
+            } 
+          #construction {
+              position:relative;
+              transform: translate(0, -270px);
+              color: white;
+              border-width: 2px;
+              border-color: black;
+          }
           
           .btn-sized {
               min-width: 90px;
@@ -92,9 +110,9 @@
                     <span class="icon-bar"></span>
                 </button>                
                 
-                <img src="logo.png"> </img>
+                <img class="company" src="logo.png"> </img>
                 <a href="#" class="navbar-brand"></a>
-                <font color="#d10d40" >re-Vision Development, LLC</font>
+            <div class="company" style="padding-top:20px;">re-Vision Development, LLC</div>
 
                 <span class="sr-only">Toggle navigation</span>
                 
@@ -112,7 +130,9 @@
     
     <div class="jumbotron">
         <div id="photo"></div>
-        <div class="bigletters common-div">Simulated Baggage Handler<br><span style="font-size:0.5em"><button>Under Construction</button></span>
+        <div class="bigletters common-div">Simulated Baggage Handler</div>
+        <div>
+            <button id="construction">Under Construction</button>
         </div>
         
     </div>
